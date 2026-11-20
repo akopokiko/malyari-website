@@ -9,12 +9,12 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f5f5f5;
+    background-color: #FFFDE7;
 }
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #4CAF50, #8BC34A);
+    background: linear-gradient(135deg, #D84315, #FF6F00);
     color: white;
     padding: 2rem;
     text-align: center;
@@ -47,51 +47,51 @@ section {
 }
 
 section h2 {
-    color: #4CAF50;
+    color: #D84315;
     margin-bottom: 1.5rem;
     text-align: center;
 }
 
-/* Tree Gallery */
-.tree-cards {
+/* Piano Gallery */
+.piano-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
 }
 
-.tree-card {
-    background: #fafafa;
+.piano-card {
+    background: #FFFDE7;
     padding: 1.5rem;
     border-radius: 10px;
     text-align: center;
-    border: 2px solid #eee;
+    border: 2px solid #FFE0B2;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.tree-card:hover {
+.piano-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-    border-color: #4CAF50;
+    box-shadow: 0 8px 20px rgba(216,67,21,0.2);
+    border-color: #D84315;
 }
 
-.tree-icon {
+.piano-icon {
     font-size: 4rem;
     margin-bottom: 1rem;
 }
 
-.tree-card h3 {
-    color: #444;
+.piano-card h3 {
+    color: #BF360C;
     margin-bottom: 0.5rem;
 }
 
-.tree-card p {
-    color: #666;
+.piano-card p {
+    color: #555;
     margin-bottom: 1rem;
 }
 
 /* Buttons */
 .reveal-btn,
-#view-tree-btn,
+#view-piano-btn,
 #reset-btn,
 .theme-btn {
     padding: 0.75rem 1.5rem;
@@ -104,45 +104,45 @@ section h2 {
 }
 
 .reveal-btn {
-    background: #4CAF50;
+    background: #D84315;
     color: white;
 }
 
 .reveal-btn:hover {
-    background: #45a049;
+    background: #BF360C;
     transform: scale(1.05);
 }
 
-#view-tree-btn {
-    background: #8BC34A;
+#view-piano-btn {
+    background: #FFB74D;
     color: white;
 }
 
-#view-tree-btn:hover {
-    background: #7cb342;
+#view-piano-btn:hover {
+    background: #FFA726;
 }
 
 #reset-btn {
-    background: #95a5a6;
+    background: #8D6E63;
     color: white;
 }
 
 #reset-btn:hover {
-    background: #7f8c8d;
+    background: #6D4C41;
 }
 
 .theme-btn {
-    background: #fff59d;
+    background: #FFF3E0;
     color: #333;
 }
 
 .theme-btn:hover {
-    background: #ffeb3b;
+    background: #FFE0B2;
 }
 
 /* Secret Text */
 .secret-text {
-    color: #2e7d32;
+    color: #BF360C;
     font-weight: bold;
     font-size: 0.95rem;
     margin-top: 0.5rem;
@@ -159,9 +159,9 @@ section h2 {
     margin-bottom: 1rem;
 }
 
-#tree-count {
+#piano-count {
     font-size: 2rem;
-    color: #4CAF50;
+    color: #D84315;
     font-weight: bold;
 }
 
@@ -173,85 +173,170 @@ section h2 {
     flex-wrap: wrap;
 }
 
+/* Facts Section */
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.fact-card {
+    background: #FFF8E1;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #D84315;
+}
+
+.fact-card h3 {
+    color: #BF360C;
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+}
+
+.fact-card p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Pianists Section */
+.pianists-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.pianist-card {
+    background: #FFECB3;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #FF6F00;
+}
+
+.pianist-card h3 {
+    color: #E65100;
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+}
+
+.pianist-card p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
 /* Footer */
 footer {
-    background: #333;
+    background: #BF360C;
     color: white;
     text-align: center;
     padding: 1.5rem;
     margin-top: 2rem;
 }
 
-/* Dark Theme */
-body.dark-theme {
-    background-color: #1a1a2e;
-    color: #eee;
+/* Classical Theme */
+body.classical-theme {
+    background-color: #F5F5F5;
+    color: #333;
 }
 
-body.dark-theme header {
-    background: linear-gradient(135deg, #16213e, #0f3460);
+body.classical-theme header {
+    background: linear-gradient(135deg, #5D4037, #8D6E63);
 }
 
-body.dark-theme section {
-    background: #16213e;
-    color: #eee;
-}
-
-body.dark-theme .tree-card {
-    background: #1a1a2e;
-    border-color: #333;
-}
-
-body.dark-theme .tree-card h3 {
-    color: #4CAF50;
-}
-
-body.dark-theme .tree-card p {
-    color: #aaa;
-}
-
-body.dark-theme .secret-text {
-    color: #8BC34A;
-}
-
-body.dark-theme .theme-btn {
-    background: #0f3460;
-    color: white;
-}
-
-/* Pastel Theme */
-body.pastel-theme {
-    background-color: #f0f8ff;
-    color: #555;
-}
-
-body.pastel-theme header {
-    background: linear-gradient(135deg, #90EE90, #FFD700);
-}
-
-body.pastel-theme section {
+body.classical-theme section {
     background: #fff;
 }
 
-body.pastel-theme .tree-card {
-    background: #f0fff0;
-    border-color: #90EE90;
+body.classical-theme .piano-card {
+    background: #F5F5F5;
+    border-color: #D7CCC8;
 }
 
-body.pastel-theme .tree-card h3 {
-    color: #2e8b57;
+body.classical-theme .piano-card h3 {
+    color: #4E342E;
 }
 
-body.pastel-theme .tree-card p {
-    color: #888;
+body.classical-theme .piano-card p {
+    color: #555;
 }
 
-body.pastel-theme .secret-text {
-    color: #6a5acd;
+body.classical-theme .secret-text {
+    color: #5D4037;
 }
 
-body.pastel-theme .theme-btn {
-    background: #e0c3fc;
+body.classical-theme .theme-btn {
+    background: #D7CCC8;
+    color: #333;
+}
+
+/* Modern Theme */
+body.modern-theme {
+    background-color: #FAFAFA;
+    color: #333;
+}
+
+body.modern-theme header {
+    background: linear-gradient(135deg, #212121, #424242);
+}
+
+body.modern-theme section {
+    background: #fff;
+}
+
+body.modern-theme .piano-card {
+    background: #FAFAFA;
+    border-color: #E0E0E0;
+}
+
+body.modern-theme .piano-card h3 {
+    color: #212121;
+}
+
+body.modern-theme .piano-card p {
+    color: #555;
+}
+
+body.modern-theme .secret-text {
+    color: #424242;
+}
+
+body.modern-theme .theme-btn {
+    background: #E0E0E0;
+    color: #333;
+}
+
+/* Light Theme */
+body.light-theme {
+    background-color: #FFFDE7;
+    color: #333;
+}
+
+body.light-theme header {
+    background: linear-gradient(135deg, #FFECB3, #FFE082);
+}
+
+body.light-theme section {
+    background: #fff;
+}
+
+body.light-theme .piano-card {
+    background: #FFFDE7;
+    border-color: #FFF59D;
+}
+
+body.light-theme .piano-card h3 {
+    color: #F57F17;
+}
+
+body.light-theme .piano-card p {
+    color: #555;
+}
+
+body.light-theme .secret-text {
+    color: #F9A825;
+}
+
+body.light-theme .theme-btn {
+    background: #FFF9C4;
     color: #333;
 }
 
@@ -261,13 +346,21 @@ body.pastel-theme .theme-btn {
         font-size: 1.8rem;
     }
 
-    .tree-cards {
+    .piano-cards {
         grid-template-columns: 1fr;
     }
 
     .theme-buttons {
         flex-direction: column;
         align-items: center;
+    }
+
+    .facts-container {
+        grid-template-columns: 1fr;
+    }
+
+    .pianists-container {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -283,7 +376,7 @@ body.pastel-theme .theme-btn {
     }
 }
 
-.tree-card {
+.piano-card {
     animation: fadeIn 0.5s ease-out;
 }
 
@@ -296,6 +389,6 @@ body.pastel-theme .theme-btn {
     }
 }
 
-.tree-card:hover {
+.piano-card:hover {
     animation: pulse 0.3s ease-in-out;
 }

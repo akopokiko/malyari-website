@@ -3,58 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tree Forest</title>
+    <title>The Piano World</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>🌳 Beautiful Trees 🌳</h1>
-        <p>Explore the world of trees</p>
+        <h1>🎹 The Piano World 🎹</h1>
+        <p>Discover the magic of the piano</p>
     </header>
 
     <main>
-        <section id="tree-gallery">
-            <h2>Tree Gallery</h2>
-            <div class="tree-cards">
-                <div class="tree-card" data-name="oak">
-                    <div class="tree-icon">🌳</div>
-                    <h3>Oak</h3>
-                    <p>A strong and long-lived tree with broad leaves.</p>
+        <section id="piano-gallery">
+            <h2>Piano Gallery</h2>
+            <div class="piano-cards">
+                <div class="piano-card" data-name="grand">
+                    <div class="piano-icon">🎹</div>
+                    <h3>Grand Piano</h3>
+                    <p>The largest and most expensive type of piano, known for its rich, resonant sound.</p>
                     <button class="reveal-btn">Reveal Secret</button>
-                    <p class="secret-text" style="display: none;">Oak trees can live for over 200 years!</p>
+                    <p class="secret-text" style="display: none;">A grand piano can have over 200 strings!</p>
                 </div>
 
-                <div class="tree-card" data-name="pine">
-                    <div class="tree-icon">🌲</div>
-                    <h3>Pine</h3>
-                    <p>An evergreen conifer with needle-like leaves.</p>
+                <div class="piano-card" data-name="upright">
+                    <div class="piano-icon">🎻</div>
+                    <h3>Upright Piano</h3>
+                    <p>The most common type of piano, with strings running vertically.</p>
                     <button class="reveal-btn">Reveal Secret</button>
-                    <p class="secret-text" style="display: none;">Pine trees produce resin to protect against insects!</p>
+                    <p class="secret-text" style="display: none;">Upright pianos can have up to 230 strings!</p>
                 </div>
 
-                <div class="tree-card" data-name="maple">
-                    <div class="tree-icon">🍁</div>
-                    <h3>Maple</h3>
-                    <p>Famous for its distinctive lobed leaves.</p>
+                <div class="piano-card" data-name="digital">
+                    <div class="piano-icon">💻</div>
+                    <h3>Digital Piano</h3>
+                    <p>Modern electronic pianos that simulate acoustic piano sounds.</p>
                     <button class="reveal-btn">Reveal Secret</button>
-                    <p class="secret-text" style="display: none;">Maple trees produce delicious syrup!</p>
+                    <p class="secret-text" style="display: none;">Digital pianos can produce 128 voices simultaneously!</p>
                 </div>
 
-                <div class="tree-card" data-name="willow">
-                    <div class="tree-icon">🌿</div>
-                    <h3>Willow</h3>
-                    <p>A graceful tree with long, drooping branches.</p>
+                <div class="piano-card" data-name="harp">
+                    <div class="piano-icon">🎼</div>
+                    <h3>Piano Harp</h3>
+                    <p>A rare hybrid instrument combining features of both pianos and harps.</p>
                     <button class="reveal-btn">Reveal Secret</button>
-                    <p class="secret-text" style="display: none;">Willow trees have been used for centuries in traditional medicine!</p>
+                    <p class="secret-text" style="display: none;">The piano harp has 88 keys and 4,000+ strings!</p>
                 </div>
             </div>
         </section>
 
         <section id="interactive-section">
-            <h2>Tree Counter</h2>
+            <h2>Piano Counter</h2>
             <div class="counter-container">
-                <p>Trees viewed: <span id="tree-count">0</span></p>
-                <button id="view-tree-btn">View Another Tree</button>
+                <p>Pianos viewed: <span id="piano-count">0</span></p>
+                <button id="view-piano-btn">View Another Piano</button>
                 <button id="reset-btn">Reset Counter</button>
             </div>
         </section>
@@ -63,14 +63,50 @@
             <h2>Change Theme</h2>
             <div class="theme-buttons">
                 <button class="theme-btn" data-theme="light">Light</button>
-                <button class="theme-btn" data-theme="dark">Dark</button>
-                <button class="theme-btn" data-theme="pastel">Pastel</button>
+                <button class="theme-btn" data-theme="classical">Classical</button>
+                <button class="theme-btn" data-theme="modern">Modern</button>
+            </div>
+        </section>
+
+        <section id="piano-facts">
+            <h2>Piano Facts</h2>
+            <div class="facts-container">
+                <div class="fact-card">
+                    <h3>🎹 Keys</h3>
+                    <p>A standard piano has 88 keys, spanning seven and a half octaves.</p>
+                </div>
+                <div class="fact-card">
+                    <h3>🎼 History</h3>
+                    <p>The piano was invented by Bartolomeo Cristofori in Italy around 1700.</p>
+                </div>
+                <div class="fact-card">
+                    <h3>🎶 Strings</h3>
+                    <p>Each key on a piano controls one or more strings that vibrate to produce sound.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="famous-pianists">
+            <h2>Famous Pianists</h2>
+            <div class="pianists-container">
+                <div class="pianist-card">
+                    <h3>🎹 Ludwig van Beethoven</h3>
+                    <p>German composer and pianist known for his powerful and emotional piano works.</p>
+                </div>
+                <div class="pianist-card">
+                    <h3>🎹 Frédéric Chopin</h3>
+                    <p>Polish composer and virtuoso pianist, known as the "Poet of the Piano".</p>
+                </div>
+                <div class="pianist-card">
+                    <h3>🎹 Clara Schumann</h3>
+                    <p>German pianist and composer, one of the most celebrated pianists of the 19th century.</p>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Tree Forest - Made with 🌲</p>
+        <p>&copy; 2026 The Piano World - Made with 🎹</p>
     </footer>
 
     <script src="script.js"></script>

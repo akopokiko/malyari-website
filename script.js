@@ -1,37 +1,37 @@
-// Piano World JavaScript Interactions
+// Fish World JavaScript Interactions
 
-// Piano Counter
-let pianoCount = 0;
-const pianoCountElement = document.getElementById('piano-count');
-const viewPianoBtn = document.getElementById('view-piano-btn');
+// Fish Counter
+let fishCount = 0;
+const fishCountElement = document.getElementById('fish-count');
+const viewFishBtn = document.getElementById('view-fish-btn');
 const resetBtn = document.getElementById('reset-btn');
 
-// View Another Piano
-viewPianoBtn.addEventListener('click', function() {
-    pianoCount++;
-    pianoCountElement.textContent = pianoCount;
+// View Another Fish
+viewFishBtn.addEventListener('click', function() {
+    fishCount++;
+    fishCountElement.textContent = fishCount;
     
     // Add a small animation
-    pianoCountElement.style.transform = 'scale(1.2)';
-    pianoCountElement.style.transition = 'transform 0.2s';
+    fishCountElement.style.transform = 'scale(1.2)';
+    fishCountElement.style.transition = 'transform 0.2s';
     setTimeout(() => {
-        pianoCountElement.style.transform = 'scale(1)';
+        fishCountElement.style.transform = 'scale(1)';
     }, 200);
     
-    // Show a random piano message
+    // Show a random fish message
     const messages = [
-        '🎹 Beautiful!',
-        '🎼 So elegant!',
-        '🎶 Magnificent!',
-        '🎻 Incredible!',
-        '🎵 Wonderful!'
+        '🐠 Beautiful!',
+        '🌊 So graceful!',
+        '🐟 Magnificent!',
+        '🐡 Incredible!',
+        '🐋 Wonderful!'
     ];
     const randomMessage = messages[Math.floor(Math.random() * messages.length)];
     
     // Create a temporary message element
     const message = document.createElement('div');
     message.textContent = randomMessage;
-    message.style.cssText = 'position: fixed; top: 20px; right: 20px; background: #FFCCBC; color: #333; padding: 10px 20px; border-radius: 20px; font-weight: bold; animation: fadeIn 0.3s;';
+    message.style.cssText = 'position: fixed; top: 20px; right: 20px; background: #B2EBF2; color: #333; padding: 10px 20px; border-radius: 20px; font-weight: bold; animation: fadeIn 0.3s;';
     document.body.appendChild(message);
     
     setTimeout(() => {
@@ -41,17 +41,17 @@ viewPianoBtn.addEventListener('click', function() {
 
 // Reset Counter
 resetBtn.addEventListener('click', function() {
-    pianoCount = 0;
-    pianoCountElement.textContent = pianoCount;
+    fishCount = 0;
+    fishCountElement.textContent = fishCount;
     
     // Add a reset animation
-    pianoCountElement.style.color = '#8D6E63';
+    fishCountElement.style.color = '#00695C';
     setTimeout(() => {
-        pianoCountElement.style.color = '#D84315';
+        fishCountElement.style.color = '#C62828';
     }, 300);
 });
 
-// Reveal Secret for each piano card
+// Reveal Secret for each fish card
 const revealButtons = document.querySelectorAll('.reveal-btn');
 const secretTexts = document.querySelectorAll('.secret-text');
 
@@ -63,11 +63,11 @@ revealButtons.forEach((btn, index) => {
             secretText.style.display = 'block';
             secretText.style.animation = 'fadeIn 0.5s ease-out';
             btn.textContent = 'Hide Secret';
-            btn.style.background = '#D84315';
+            btn.style.background = '#C62828';
         } else {
             secretText.style.display = 'none';
             btn.textContent = 'Reveal Secret';
-            btn.style.background = '#FFCCBC';
+            btn.style.background = '#B2EBF2';
         }
     });
 });
@@ -80,7 +80,7 @@ themeButtons.forEach(btn => {
         const theme = this.getAttribute('data-theme');
         
         // Remove all themes
-        document.body.classList.remove('classical-theme', 'modern-theme');
+        document.body.classList.remove('ocean-theme', 'coral-theme');
         
         // Add selected theme
         if (theme) {
@@ -89,11 +89,11 @@ themeButtons.forEach(btn => {
         
         // Update button styles
         themeButtons.forEach(b => {
-            b.style.background = '#FFF3E0';
+            b.style.background = '#E0F2F1';
             b.style.color = '#333';
         });
         
-        this.style.background = '#D84315';
+        this.style.background = '#C62828';
         this.style.color = 'white';
     });
 });
@@ -115,5 +115,5 @@ style.textContent = `
 document.head.appendChild(style);
 
 // Console greeting
-console.log('🎹 Welcome to The Piano World! 🎹');
-console.log('Discover the magic of the piano!');
+console.log('🐠 Welcome to The Fish World! 🐠');
+console.log('Discover the magic of fish!');

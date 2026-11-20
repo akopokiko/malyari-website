@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Forest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🌳 Beautiful Trees 🌳</h1>
+        <p>Explore the world of trees</p>
+    </header>
+
+    <main>
+        <section id="tree-gallery">
+            <h2>Tree Gallery</h2>
+            <div class="tree-cards">
+                <div class="tree-card" data-name="oak">
+                    <div class="tree-icon">🌳</div>
+                    <h3>Oak</h3>
+                    <p>A strong and long-lived tree with broad leaves.</p>
+                    <button class="reveal-btn">Reveal Secret</button>
+                    <p class="secret-text" style="display: none;">Oak trees can live for over 200 years!</p>
+                </div>
+
+                <div class="tree-card" data-name="pine">
+                    <div class="tree-icon">🌲</div>
+                    <h3>Pine</h3>
+                    <p>An evergreen conifer with needle-like leaves.</p>
+                    <button class="reveal-btn">Reveal Secret</button>
+                    <p class="secret-text" style="display: none;">Pine trees produce resin to protect against insects!</p>
+                </div>
+
+                <div class="tree-card" data-name="maple">
+                    <div class="tree-icon">🍁</div>
+                    <h3>Maple</h3>
+                    <p>Famous for its distinctive lobed leaves.</p>
+                    <button class="reveal-btn">Reveal Secret</button>
+                    <p class="secret-text" style="display: none;">Maple trees produce delicious syrup!</p>
+                </div>
+
+                <div class="tree-card" data-name="willow">
+                    <div class="tree-icon">🌿</div>
+                    <h3>Willow</h3>
+                    <p>A graceful tree with long, drooping branches.</p>
+                    <button class="reveal-btn">Reveal Secret</button>
+                    <p class="secret-text" style="display: none;">Willow trees have been used for centuries in traditional medicine!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="interactive-section">
+            <h2>Tree Counter</h2>
+            <div class="counter-container">
+                <p>Trees viewed: <span id="tree-count">0</span></p>
+                <button id="view-tree-btn">View Another Tree</button>
+                <button id="reset-btn">Reset Counter</button>
+            </div>
+        </section>
+
+        <section id="color-changer">
+            <h2>Change Theme</h2>
+            <div class="theme-buttons">
+                <button class="theme-btn" data-theme="light">Light</button>
+                <button class="theme-btn" data-theme="dark">Dark</button>
+                <button class="theme-btn" data-theme="pastel">Pastel</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tree Forest - Made with 🌲</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

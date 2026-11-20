@@ -1,0 +1,301 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #4CAF50, #8BC34A);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    color: #4CAF50;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Tree Gallery */
+.tree-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.tree-card {
+    background: #fafafa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #eee;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tree-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    border-color: #4CAF50;
+}
+
+.tree-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.tree-card h3 {
+    color: #444;
+    margin-bottom: 0.5rem;
+}
+
+.tree-card p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Buttons */
+.reveal-btn,
+#view-tree-btn,
+#reset-btn,
+.theme-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0.25rem;
+}
+
+.reveal-btn {
+    background: #4CAF50;
+    color: white;
+}
+
+.reveal-btn:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+#view-tree-btn {
+    background: #8BC34A;
+    color: white;
+}
+
+#view-tree-btn:hover {
+    background: #7cb342;
+}
+
+#reset-btn {
+    background: #95a5a6;
+    color: white;
+}
+
+#reset-btn:hover {
+    background: #7f8c8d;
+}
+
+.theme-btn {
+    background: #fff59d;
+    color: #333;
+}
+
+.theme-btn:hover {
+    background: #ffeb3b;
+}
+
+/* Secret Text */
+.secret-text {
+    color: #2e7d32;
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+}
+
+/* Counter Section */
+.counter-container {
+    text-align: center;
+    padding: 2rem;
+}
+
+.counter-container p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#tree-count {
+    font-size: 2rem;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Theme Buttons */
+.theme-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #1a1a2e;
+    color: #eee;
+}
+
+body.dark-theme header {
+    background: linear-gradient(135deg, #16213e, #0f3460);
+}
+
+body.dark-theme section {
+    background: #16213e;
+    color: #eee;
+}
+
+body.dark-theme .tree-card {
+    background: #1a1a2e;
+    border-color: #333;
+}
+
+body.dark-theme .tree-card h3 {
+    color: #4CAF50;
+}
+
+body.dark-theme .tree-card p {
+    color: #aaa;
+}
+
+body.dark-theme .secret-text {
+    color: #8BC34A;
+}
+
+body.dark-theme .theme-btn {
+    background: #0f3460;
+    color: white;
+}
+
+/* Pastel Theme */
+body.pastel-theme {
+    background-color: #f0f8ff;
+    color: #555;
+}
+
+body.pastel-theme header {
+    background: linear-gradient(135deg, #90EE90, #FFD700);
+}
+
+body.pastel-theme section {
+    background: #fff;
+}
+
+body.pastel-theme .tree-card {
+    background: #f0fff0;
+    border-color: #90EE90;
+}
+
+body.pastel-theme .tree-card h3 {
+    color: #2e8b57;
+}
+
+body.pastel-theme .tree-card p {
+    color: #888;
+}
+
+body.pastel-theme .secret-text {
+    color: #6a5acd;
+}
+
+body.pastel-theme .theme-btn {
+    background: #e0c3fc;
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .tree-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .theme-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tree-card {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.tree-card:hover {
+    animation: pulse 0.3s ease-in-out;
+}
